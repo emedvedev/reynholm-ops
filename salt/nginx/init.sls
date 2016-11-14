@@ -13,7 +13,7 @@ Nginx should be installed:
 Nginx should be configured:
   file.managed:
     - name: /etc/nginx/nginx.conf
-    - source: salt://nginx.conf
+    - source: salt://nginx/nginx.conf
     - user: root
     - group: root
     - mode: 640
@@ -21,7 +21,7 @@ Nginx should be configured:
 Default site should be configured:
   file.managed:
     - name: /etc/nginx/sites-available/default
-    - source: salt://{{ grains['roles'][0] }}.conf
+    - source: salt://nginx/{{ grains['roles'][0] }}.conf
     - user: root
     - group: root
     - mode: 640
