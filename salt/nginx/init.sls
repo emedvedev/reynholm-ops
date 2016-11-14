@@ -17,6 +17,8 @@ Nginx should be configured:
     - user: root
     - group: root
     - mode: 640
+
+Default site should be configured:
   file.managed:
     - name: /etc/nginx/sites-available/default
     - source: salt://{{ grains['roles'][0] }}.conf
