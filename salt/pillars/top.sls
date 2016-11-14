@@ -1,6 +1,6 @@
 base:
   '*':
     - sensu
-  'role:app'
+  'role:app':
     - match: grain
     - app
