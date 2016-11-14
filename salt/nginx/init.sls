@@ -25,6 +25,8 @@ Default site should be configured:
     - user: root
     - group: root
     - mode: 640
+
+Default site should be enabled:
   file.symlink:
     - name: /etc/nginx/sites-enabled/default
     - target: /etc/nginx/sites-available/default
