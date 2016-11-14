@@ -1,6 +1,6 @@
 sensu:
   rabbitmq:
-    host: 'reynholm-monitoring-1'
+    host: 'monitoring.role.reynholm.ru'
   api:
     user: 'admin'
     password: '3TuV?!p!wM?8r4t8'
