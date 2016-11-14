@@ -1,6 +1,9 @@
 #!/bin/sh
 
 ROLE=$1
+ID=$2
+
+hostnamectl set-hostname "reynholm-$ROLE-$ID"
 
 # Install saltstack
 wget -O - https://repo.saltstack.com/apt/ubuntu/16.04/amd64/latest/SALTSTACK-GPG-KEY.pub | sudo apt-key add -
@@ -9,11 +12,10 @@ apt-get update -y
 apt-get install salt-minion python-pygit2 -y
 
 # Configure a standalone minion and a role
-cp salt/config/standalone.conf /etc/salt/minion.d/
-cat <<EOF >> /etc/salt/minion.d/standalone.conf
+cp salt/config/minion.conf /etc/salt/minion.d/
+cat <<EOF >> /etc/salt/minion.d/minion.conf
 grains:
-  roles:
-    - $ROLE
+  role: $ROLE
 EOF
 
 systemctl stop salt-minion
