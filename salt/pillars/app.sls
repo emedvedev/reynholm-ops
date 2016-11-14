@@ -1,0 +1,4 @@
+sensu:
+  client:
+    subscriptions:
+      - 'app'

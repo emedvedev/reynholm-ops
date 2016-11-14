@@ -1,16 +1,14 @@
 base:
-
   '*':
     - sensu.client
-
   'role:app':
     - match: grain
     - nginx
     - app
-
-  'reynholm-monitoring-1':
+  'role:monitoring':
+    - match: grain
     - rabbitmq
     - redis.server
+    - sensu.api
     - sensu.server
     - sensu.uchiwa
-    - sensu.api
