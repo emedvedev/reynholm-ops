@@ -1,5 +1,6 @@
 base:
   '*':
+    - minion
     - sensu.client
   'role:app':
     - match: grain
