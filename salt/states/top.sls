@@ -10,7 +10,7 @@ base:
 
   'reynholm-monitoring-1':
     - rabbitmq
-    - redis
+    - redis.server
     - sensu.server
     - sensu.uchiwa
     - sensu.api
