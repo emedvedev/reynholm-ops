@@ -1,8 +1,8 @@
 sensu:
   rabbitmq:
     host: 'monitoring.role.reynholm.ru'
-    user: sensu
-    password: secret
+    user: 'sensu'
+    password: 'secret'
   client:
     name: {{ grains['nodename'] }}
     address: {{ grains['ipv4'][0] }}
@@ -17,7 +17,7 @@ sensu:
   uchiwa:
     host: '0.0.0.0'
     users:
-      - username: admin
+      - username: 'admin'
         password: '3TuV?!p!wM?8r4t8'
         role:
           readonly: False

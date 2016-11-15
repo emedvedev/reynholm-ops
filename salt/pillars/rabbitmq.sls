@@ -5,7 +5,7 @@ rabbitmq:
     rabbitmq_management:
       - enabled
   vhost:
-    vh_name: '/sensu'
+    vh_name: 'sensu'
   user:
     sensu:
       - password: secret
