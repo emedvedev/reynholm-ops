@@ -7,6 +7,13 @@ sensu:
   client:
     name: {{ grains['nodename'] }}
     address: {{ grains['ipv4'][0] }}
+    embedded_ruby: True
+    nagios_plugins: True
+    keepalive:
+      interval: 3
+      handler: st2
+      thresholds:
+        critical: 15
     subscriptions:
       - all
   api:
