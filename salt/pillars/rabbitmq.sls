@@ -12,7 +12,7 @@ rabbitmq:
       - force: True
       - tags: monitoring, user
       - perms:
-        - '/':
+        - '/sensu':
           - '.*'
           - '.*'
           - '.*'

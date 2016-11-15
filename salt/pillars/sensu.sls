@@ -3,6 +3,11 @@ sensu:
     host: 'monitoring.role.reynholm.ru'
     user: sensu
     password: secret
+  client:
+    name: {{ grains['nodename'] }}
+    address: {{ grains['ipv4'][0] }}
+    subscriptions:
+      - all
   api:
     user: 'admin'
     password: '3TuV?!p!wM?8r4t8'
