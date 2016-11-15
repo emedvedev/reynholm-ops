@@ -7,3 +7,4 @@ base:
   'role:monitoring':
     - match: grain
     - redis
+    - rabbitmq

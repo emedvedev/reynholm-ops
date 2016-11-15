@@ -1,6 +1,8 @@
 sensu:
   rabbitmq:
     host: 'monitoring.role.reynholm.ru'
+    user: sensu
+    password: secret
   api:
     user: 'admin'
     password: '3TuV?!p!wM?8r4t8'
@@ -19,3 +21,4 @@ sensu:
       host: 'localhost'
       user: 'admin'
       pass: '3TuV?!p!wM?8r4t8'
+      port: 4567
