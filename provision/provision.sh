@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 ROLE=$1
 
@@ -14,7 +14,7 @@ grains:
 EOF
 
 # Install git-python
-apt-get -y install python-git
+apt-get -y install python-git < "/dev/null"
 
 # Apply state
 salt-call state.apply
