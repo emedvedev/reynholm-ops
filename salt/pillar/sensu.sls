@@ -1,11 +1,11 @@
 sensu:
   rabbitmq:
-    host: 'monitoring-alpha.reynholm.ru'
+    host: 'alpha.monitoring.reynholm.ru'
     vhost: 'sensu'
     user: 'sensu'
     password: 'secret'
   client:
-    name: "{{ grains['role'] }}-{{ grains['shortname'] }}.reynholm.ru"
+    name: "{{ grains['shortname'] }}.{{ grains['role'] }}.reynholm.ru"
     address: {{ grains['ipv4'][0] }}
     embedded_ruby: True
     nagios_plugins: True
