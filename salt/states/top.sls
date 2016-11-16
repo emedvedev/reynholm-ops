@@ -13,3 +13,6 @@ base:
     - sensu.api
     - sensu.server
     - sensu.uchiwa
+  'role:cnc':
+    - match: grain
+    - cnc
