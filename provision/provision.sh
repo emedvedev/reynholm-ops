@@ -14,7 +14,7 @@ grains:
 EOF
 
 # Install git-python
-apt-get install python-git -y
+apt-get -y install python-git
 
 # Apply state
 salt-call state.apply
