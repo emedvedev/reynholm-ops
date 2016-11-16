@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ROLE=$1
+NAME=$2
 
 # Install saltstack
 curl -sL https://bootstrap.saltstack.com | bash -s -- -P -X -d
@@ -11,6 +12,7 @@ cat <<EOF >> /etc/salt/minion.d/minion.conf
 
 grains:
   role: $ROLE
+  shortname: $NAME
 EOF
 
 # Install git-python

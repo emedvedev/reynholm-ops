@@ -5,7 +5,7 @@ sensu:
     user: 'sensu'
     password: 'secret'
   client:
-    name: {{ grains['nodename'] }}
+    name: "{{ grains['role'] }}-{{ grains['shortname'] }}.reynholm.ru"
     address: {{ grains['ipv4'][0] }}
     embedded_ruby: True
     nagios_plugins: True
