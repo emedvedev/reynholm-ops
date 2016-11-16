@@ -1,6 +1,6 @@
 sensu:
   rabbitmq:
-    host: 'monitoring.role.reynholm.ru'
+    host: 'monitoring-alpha.reynholm.ru'
     vhost: 'sensu'
     user: 'sensu'
     password: 'secret'
