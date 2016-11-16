@@ -9,7 +9,7 @@ hostnamectl set-hostname "reynholm-$ROLE-$ID"
 curl -L https://bootstrap.saltstack.com -o install_salt.sh
 sudo sh install_salt.sh -P -X -d
 
-# apt-get install python-dev python-pip python-git -y
+apt-get install python-git -y
 
 # Configure a standalone minion and a role
 cp salt/config/minion.conf /etc/salt/minion.d/
