@@ -12,8 +12,6 @@ sensu:
     keepalive:
       interval: 3
       handler: st2
-      thresholds:
-        critical: 15
     subscriptions:
       - all
   api:
