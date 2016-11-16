@@ -7,7 +7,9 @@ Reynholm prerequisite packs should be installed:
   cmd.run:
     - name: "st2 pack install sensu aws hue"
     - creates: /opt/stackstorm/packs/sensu
+    - runas: root
 
 Reynholm pack should be installed:
   cmd.run:
     - name: "st2 pack install https://github.com/emedvedev/reynholm-stackstorm"
+    - runas: root
