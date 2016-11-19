@@ -30,6 +30,7 @@ sensu:
   sites:
     - name: 'Reynholm Industries'
       host: 'localhost'
+      port: 4567
       user: 'admin'
       pass: '3TuV?!p!wM?8r4t8'
-      port: 4567
+
